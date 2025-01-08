@@ -10,7 +10,7 @@ RUN set -eux \
   && cp /ev_${EV_VERSION}_linux_amd64/ev_linux_amd64 /app/ev_linux_amd64 \
   && chmod +x /app/ev_linux_amd64 \
   && cp -r /ev_${EV_VERSION}_linux_amd64/config /app/ \
-  && cp -r /app/config/i18n /app/config/ev_i18n
+  && cp -r /app/config/i18n /app/config/ev-i18n
 
 WORKDIR /app
 EXPOSE 8090
